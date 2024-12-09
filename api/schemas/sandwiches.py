@@ -9,7 +9,7 @@ class SandwichBase(BaseModel):
     sandwich_name: Optional[str] = None
     price: ConDecimal4_2 = 0.00
     ingrediants: Optional[str] = None
-    calories: ConDecimal4_2 = 0.00
+    calories: int
     category: Optional[str] = None
 
 class SandwichCreate(SandwichBase):
@@ -20,7 +20,7 @@ class SandwichUpdate(BaseModel):
     sandwich_name: Optional[str] = None
     price: Optional[ConDecimal4_2] = None
     ingrediants: Optional[str] = None
-    calories: Optional[ConDecimal4_2] = None
+    calories: int
     category: Optional[str] = None
 
 class Sandwich(SandwichBase):

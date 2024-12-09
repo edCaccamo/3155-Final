@@ -14,6 +14,7 @@
 * `pip install pytest-mock`
 * `pip install httpx`
 * `pip install cryptography`
+* `pip install pydantic[email]`
 
 ### For MySQL Workbench
 * Set config in api/dependencies/config.py
