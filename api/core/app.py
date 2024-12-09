@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from ..models import model_loader
 from ..dependencies.config import conf
+from ..dependencies.database import engine, Base
 
 app = FastAPI()
 
@@ -16,3 +17,4 @@ app.add_middleware(
 )
 
 model_loader.index()
+
