@@ -3,6 +3,7 @@
 * Mauricio M. 
 
 ### Enter venv
+* Create a venv in the root folder for yourself
 * `.\.venv\Scripts\activate`
 
 ### Installing necessary packages

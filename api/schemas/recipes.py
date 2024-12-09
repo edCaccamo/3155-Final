@@ -1,19 +1,20 @@
-from typing import Optional
+from typing import Optional, List, Dict
 from pydantic import BaseModel
 
-class RecipeBase(BaseModel):
-    sandwich_id: int
+class ResourceInput(BaseModel):
     resource_id: int
     amount: int
 
+class RecipeBase(BaseModel):
+    sandwich_id: int
+
 
 class RecipeCreate(RecipeBase):
-    pass
+    resources: List[ResourceInput]
 
 class RecipeUpdate(BaseModel):
     sandwich_id: Optional[int] = None
-    resource_id: Optional[int] = None
-    amount: Optional[int] = None
+    resources: Optional[List[ResourceInput]]
 
 class Recipe(RecipeBase):
     id: int
