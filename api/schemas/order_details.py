@@ -2,17 +2,14 @@ from datetime import datetime
 from typing import Optional
 from pydantic import BaseModel
 
-# Assuming Sandwich is defined in api/schemas/sandwiches.py
-from .sandwiches import Sandwich
-
-
 class OrderDetailBase(BaseModel):
+    order_id: int
+    sandwich_id: int
     amount: int
 
 
 class OrderDetailCreate(OrderDetailBase):
-    order_id: int
-    sandwich_id: int
+    pass
 
 
 class OrderDetailUpdate(BaseModel):
@@ -24,7 +21,7 @@ class OrderDetailUpdate(BaseModel):
 class OrderDetail(OrderDetailBase):
     id: int
     order_id: int
-    sandwich: Optional[Sandwich] = None
 
     class Config:
         from_attributes = True
+
