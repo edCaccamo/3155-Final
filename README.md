@@ -28,6 +28,3 @@
 
 ### User stories and Product Backlog
 [https://docs.google.com/spreadsheets/d/1rJIA9EKUSKb20ZAuNn8S3p-3-UhjlFRUdrbDqw6Rtwg/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1rJIA9EKUSKb20ZAuNn8S3p-3-UhjlFRUdrbDqw6Rtwg/edit?usp=sharing)
-
-### Demo Video
-[https://www.youtube.com/watch?v=py-WTQrRKZE](https://www.youtube.com/watch?v=py-WTQrRKZE)
